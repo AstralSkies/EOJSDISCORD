@@ -28,6 +28,9 @@ A discord bot which simulates keystrokes from the discord client to the endless 
 ```
 node main.js
 ```
+## Help
+
+Insert the own token within the token.json file and the discord channel id. These are found within the main.js file. Additionally, ensure your bot within the discord developer portal has privilges.
 
 ## Authors
 
