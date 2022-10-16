@@ -1,20 +1,51 @@
-# EOJSDISCORD
+# Project Title
 
-<ins> Introduction </ins>
+An Endless Online Discord bot
 
-Just a simple keyboard simulation/read chat logs discord bot  for endless online which I got challenged to do by an Endless Online discord member. I will add gif's and markdowns on how to use this bot in the future. It will be improved upon in the future.
+## Description
 
-<ins> Required Modules </ins>
+A discord bot which simulates keystrokes from the discord client to the endless online client. Additional features include the reading of the chat logs of the game.
 
-npm install robotjs --save
+## Getting Started
+
+### Dependencies
+
+* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* ex. Windows 10
+
+```npm install robotjs --save```
+```npm install ffi-napi --save```
+```npm install find-process --save```
+
+### Installing
+
+* How/where to download your program
+* Any modifications needed to be made to files/folders
+
+### Executing program
+
+* How to run the program
+* Step-by-step bullets
+```
+node main.js
+```
+
+## Authors
+
+Contributors names and contact info
+
+ex. AstralSkies
 
 
-npm install ffi-napi --save
+## Version History
 
+* 0.1
+    * Initial Release
 
-npm install find-process --save
+## Demo
 
+TO:DO
 
-<ins> Demo <ins>
-  
-https://www.youtube.com/watch?v=qOXkQFu7_vU&t=5s
+## License
+
+This project is licensed under the [MIT] License - see the LICENSE.md file for details
