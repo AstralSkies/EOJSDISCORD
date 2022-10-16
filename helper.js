@@ -31,17 +31,6 @@ const hwnd = user32.FindWindowA(null, "Endless Online");
 // Get the process ID for Discord.
 const hwnd2 = user32.FindWindowA(null, "Discord");
 
-// Get the process ID for Discord.
-find('name', 'Discord')
-    .then(function (list) {
-        // Get the process ID for Discord.
-        const discord = list[0].pid;
-        // Set the Discord window to the foreground.
-        user32.SetForegroundWindow(discord);
-        // Send the message to the Endless Online window.
-        user32.SendMessageA(hwnd, 0x100, 0, "Hello World!");
-    });
-// Read in the chatlog file.
 const fs = require('fs');
 
 
