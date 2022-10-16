@@ -7,7 +7,11 @@ Just a simple keyboard simulation/read chat logs discord bot  for endless online
 <ins> Required Modules </ins>
 
 npm install robotjs --save
+
+
 npm install ffi-napi --save
+
+
 npm install find-process --save
 
 
