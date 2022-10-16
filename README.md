@@ -10,11 +10,10 @@ A discord bot which simulates keystrokes from the discord client to the endless 
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
 ```npm install robotjs --save```
+
 ```npm install ffi-napi --save```
+
 ```npm install find-process --save```
 
 ### Installing
