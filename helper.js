@@ -33,8 +33,6 @@ const hwnd2 = user32.FindWindowA(null, "Discord");
 
 const fs = require('fs');
 
-
-
 const client = require('./main.js');
 
 // The path to the chatlog file.
