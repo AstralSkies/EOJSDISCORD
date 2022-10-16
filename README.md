@@ -29,7 +29,7 @@ node main.js
 ```
 ## Help
 
-Insert the own token within the token.json file and the discord channel id. These are found within the main.js file. Additionally, ensure your bot within the discord developer portal has privilges.
+Insert the your own token within the token.json file and the discord channel id. These are found within the main.js file. Additionally, ensure your bot within the discord developer portal has privilges.
 
 Ensure your endless online client window is not minimised :)
 
