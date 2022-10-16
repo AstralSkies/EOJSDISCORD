@@ -18,8 +18,7 @@ A discord bot which simulates keystrokes from the discord client to the endless 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+```gh repo clone AstralSkies/EOJSDISCORD```
 
 ### Executing program
 
