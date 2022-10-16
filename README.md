@@ -1,4 +1,4 @@
-# Project Title
+# Endless Online Discord Bot
 
 An Endless Online Discord bot
 
