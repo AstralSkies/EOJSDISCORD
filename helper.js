@@ -73,7 +73,7 @@ function postMessage(message) {
     user32.SetForegroundWindow(hwnd);
     // Send the message to the Endless Online window via RobotJS
     // With a short delay to ensure the window is in focus.
-    // DM: Smoker#7777 for more information.    
+    // DM: Smoker#7777 for more information. If you would like inactive window typing.
     setTimeout(() => {
         switch (message) {
             case 'up':
