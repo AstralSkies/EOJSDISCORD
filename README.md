@@ -6,6 +6,8 @@ An Endless Online Discord bot
 
 A discord bot which simulates keystrokes from the discord client to the endless online client. Additional features include the reading of the chat logs of the game.If you would to know how to send keystrokes to the inactive window shoot me a dm :)
 
+Other features that will be present in other releases include a : chat bot which will act similar to a human.
+
 ## Getting Started
 
 ### Dependencies
