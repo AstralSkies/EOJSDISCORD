@@ -34,7 +34,7 @@ const fs = require('fs');
 const client = require('./main.js');
 
 // The path to the chatlog file.
-const chatlog = 'C:/Program Files (x86)/EndlessOnline/chatlog.txt';
+const chatlog = 'YOUR CHATLOG FILE DIRECTORY';
 
 // Read the chatlog file, return the last line and send it to Discord.
 function readChatlog(client) {
