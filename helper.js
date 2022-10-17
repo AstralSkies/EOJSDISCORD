@@ -63,8 +63,6 @@ function postMessage(message) {
     else {
         // Set the window to the foreground.
         user32.SetForegroundWindow(hwnd);
-        // Send the message via postMessage().
-        // Switch statements are used to simulate keyboard input.
         // Set a delay to ensure the window is in focus.
         setTimeout(() => {
             switch (message) {
