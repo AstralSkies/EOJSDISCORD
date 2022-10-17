@@ -30,7 +30,7 @@ client.once('ready', () => {
     // Call the ReadChatlog() function every 10seconds.
     setInterval(() => {
         // Read the chatlog file.
-        client.channels.cache.get('{YOUR CHANNEL HERE}').send({ embeds: [embed] });
+        client.channels.cache.get('1023637913868718103').send({ embeds: [embed] });
     }
     , 10000);
 });

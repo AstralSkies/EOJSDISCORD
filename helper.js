@@ -25,8 +25,6 @@ const user32 = new ffi.Library('user32', {
     'SendMessageA': ['int32', ['int32', 'uint32', 'int32', 'string']]
     });
 
-// Get the process ID
-const hwnd = user32.FindWindowA(null, "Endless Online");
 
 // Get the process ID for Discord.
 const hwnd2 = user32.FindWindowA(null, "Discord");
@@ -36,7 +34,7 @@ const fs = require('fs');
 const client = require('./main.js');
 
 // The path to the chatlog file.
-const chatlog = '{YOUR CHAT LOG PATH HERE}';
+const chatlog = 'C:/Program Files (x86)/EndlessOnline/chatlog.txt';
 
 // Read the chatlog file, return the last line and send it to Discord.
 function readChatlog(client) {
@@ -57,36 +55,47 @@ function readChatlog(client) {
 
 // Function which simulates keyboard input.
 function postMessage(message) {
-    user32.SetForegroundWindow(hwnd);
-    // Send the message to the Endless Online window via RobotJS
-    // With a short delay to ensure the window is in focus.
-    // DM: Me for more information. If you would like inactive window typing.
-    setTimeout(() => {
-        switch (message) {
-            case 'up':
-                robot.keyTap('up');
-                break;
-            case 'down':
-                robot.keyTap('down');
-                break;
-            case 'left':
-                robot.keyTap('left');
-                break;
-            case 'right':
-                robot.keyTap('right');
-                break;
-            case 'enter':
-                robot.keyTap('enter');
-                break;
-            default:
-                robot.typeString(message);
-                // Simulate the enter key.
-                robot.keyTap('enter');
-                break;
-        }
-    }, 100);
-    // return after the message has been sent.
-    return;
+    // Obtain Endless online window handle.
+    let hwnd = user32.FindWindowA(null, 'Endless Online');
+    // if hwnd is null, the window was not found.
+    if (hwnd == 0) {
+        console.log('Window not found');
+        return;
+    }
+    // else the window was found.
+    else {
+        // Set the window to the foreground.
+        user32.SetForegroundWindow(hwnd);
+        // Send the message via postMessage().
+        // Switch statements are used to simulate keyboard input.
+        // Set a delay to ensure the window is in focus.
+        setTimeout(() => {
+            switch (message) {
+                // if up arrow key.
+                case 'up':
+                    robot.keyTap('up');
+                    break;
+                // if down arrow key.
+                case 'down':
+                    robot.keyTap('down');
+                    break;
+                // if left arrow key.
+                case 'left':
+                    robot.keyTap('left');
+                    break;
+                // if right arrow key.
+                case 'right':
+                    robot.keyTap('right');
+                    break;
+                default:
+                    // Send the message via RobotJS.
+                    robot.typeString(message);
+                    // Simulate the enter key.
+                    robot.keyTap('enter');
+                    break;
+            }
+        }, 100);
+}
 }
 
 
