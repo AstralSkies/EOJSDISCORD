@@ -26,9 +26,6 @@ const user32 = new ffi.Library('user32', {
     });
 
 
-// Get the process ID for Discord.
-const hwnd2 = user32.FindWindowA(null, "Discord");
-
 const fs = require('fs');
 
 const client = require('./main.js');
